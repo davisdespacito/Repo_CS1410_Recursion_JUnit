@@ -21,11 +21,15 @@ class SumOfDigitsTest {
 	@Test
 	void sumOfDigits_positiveDigit() {
 		assertEquals(1, Recursion.sumOfDigits(1));
+		System.err.printf("%d is expected; actual is %d %n", 0,
+				Recursion.sumOfDigits(1));
 	}
 
 	@Test
 	void sumOfDigits_negativeDigit() {
 		assertEquals(5, Recursion.sumOfDigits(-5));
+		System.err.printf("%d is expected; actual is %d %n", 0,
+				Recursion.sumOfDigits(5));
 	}
 
 	@Test
