@@ -41,8 +41,6 @@ public class Recursion {
 	 */
 	public static String toUpper(String str) {
 
-		// TODO
-
 		if (str.length() <= 1) {
 
 			return str.toUpperCase();
