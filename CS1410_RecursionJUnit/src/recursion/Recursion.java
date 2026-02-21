@@ -10,7 +10,6 @@ public class Recursion {
 	 */
 	public static int sumOfDigits(int n) {
 
-		// TODO
 		if (n == 0) {
 
 			return 0;
@@ -43,8 +42,26 @@ public class Recursion {
 	public static String toUpper(String str) {
 
 		// TODO
-		return null;
 
+		if (str.length() <= 1) {
+
+			return str.toUpperCase();
+
+		}
+
+		return Character.toUpperCase(str.charAt(0)) + " " + toUpper(str.substring(1));
+	}
+
+	public static double harmonic(int n) {
+		if (n == 0)
+			throw new IllegalArgumentException("The argument n can't be zero.");
+
+		if (n == 1)
+			return 1;
+		else if (n < 0)
+			return -1 * harmonic(-n);
+		else // n > 1
+			return 1.0 / n + harmonic(n - 1);
 	}
 
 }
