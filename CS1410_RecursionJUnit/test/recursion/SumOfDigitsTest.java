@@ -5,14 +5,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 /**
-*
-* JUnitTests for 'Assignment Recursion|JUnit' method sumOfDigits.
-*
-* @author CSIS 1410 - Test Code Provided
-*
-*/
+ *
+ * JUnitTests for 'Assignment Recursion|JUnit' method sumOfDigits.
+ *
+ * @author CSIS 1410 - Test Code Provided
+ *
+ */
 class SumOfDigitsTest {
-	
+
 	@Test
 	void sumOfDigits_zero() {
 		assertEquals(0, Recursion.sumOfDigits(0));
@@ -37,7 +37,7 @@ class SumOfDigitsTest {
 	void sumOfDigits_shortNumber() {
 		assertEquals(5, Math.abs(Recursion.sumOfDigits(32)));
 	}
-	
+
 	@Test
 	void sumOfDigits_longNumber() {
 		assertEquals(33, Recursion.sumOfDigits(252_373_245));
@@ -55,5 +55,5 @@ class SumOfDigitsTest {
 		// 0167 (octal) is 119 (decimal) and the sum of digits of 119 is 11
 		assertEquals(11, Recursion.sumOfDigits(0167));
 	}
-	
+
 }
